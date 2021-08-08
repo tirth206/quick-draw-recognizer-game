@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Draw</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+</head>
+<body class="bg-custom">
+    
+    <ul class="nav">
+        <li class="nav-item">
+          <a style="color: white" class="nav-link active font-weight-bold mx-4 mt-3 p-1" href="home.html"><i class="fas fa-arrow-left"></i> Back</a>
+        </li>
+    </ul>
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-2 mt-4 mb-2 bg-light text-dark text-center rounded font-weight-bold">Steps to play</div>
+                    </div>
+                </div>
+                <div style="color: white">
+                    <p>1. Choose one of the Labels provided on the right. <br>(For eg. Sun, Flower, Umbrella)</p>
+                    <p>2. Draw inside the given Canvas area.</p>
+                    <p>3. Press 'Confirm Selection'.</p>
+                    <p>4. If you make a mistake in while drawing, press 'Clear Selection'.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                
+                <p class="draw-here mb-2">Draw Here</p>
+                <div style="width: 95%; height: 300px;" id="canvas-div">
+                    <canvas class="draw" id="canvas" ></canvas>
+                </div>
+                   
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col">
+                        <div class="p-2 mt-4 mb-2 bg-light text-dark text-center rounded font-weight-bold">Choose from the labels</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-warning my-2 p-1 lbls">Sun</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-warning my-2 p-1 lbls">Flower</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-warning my-2 p-1 lbls">Pencil</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-warning my-2 p-1 lbls">Umbrella</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-warning my-2 p-1 lbls">House</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-warning my-2 p-1 lbls">Spoon</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-success lbls my-3 p-2" type="submit">Confirm Selection</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-danger lbls p-2" type="submit" id="clear">Clear Canvas</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
