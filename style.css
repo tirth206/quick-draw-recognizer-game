@@ -1,5 +1,5 @@
 .bg-custom{
-    background-image: url(assets\\bg1.png);
+    background-image: url(bg1.png);
     background-size: cover;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .img{
-    background-image: url(assets//no-bg-canvas.png);
+    background-image: url(no-bg-canvas.png);
     background-size: cover;
     display: block;
     margin: auto;
